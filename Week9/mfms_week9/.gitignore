@@ -1,0 +1,4 @@
+*.o
+mfms.exe
+data/*.txt
+data/*.dat

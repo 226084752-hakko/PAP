@@ -1,22 +1,21 @@
-#include <stdio.h>
-int main () {
-float basicSalary;
-float housingAllowance;
-float transportAllowance;
-float tax;
-float grossSalary;
-float netSalary;
-printf("Enter Basic Salary: ");
-scanf("%f", &basicSalary);
-printf("Enter Housing Allowance: ");
-scanf("%f", &housingAllowance);
-printf("Enter Transport Allowance: ");
-scanf("%f", &transportAllowance);
-printf("Enter Tax: ");
-scanf("%f", &tax);
-grossSalary = basicSalary + housingAllowance + transportAllowance;
-netSalary = grossSalary - tax;
-printf("\n grossSalary :%.2f\n",grossSalary);
-printf("\n netSalary :%.2f\n",netSalary);
+#include <stdio.h> 
+int main()  {
+ 
+char municipality[50]; 
+char mayor[50]; 
+int population; 
+printf("Municipal Financial Management System\n\n"); 
+printf("Enter Municipality Name: "); 
+scanf(" %[^\n]", municipality); 
+ 
+printf("Enter Mayor: "); 
+scanf(" %[^\n]", mayor); 
+
+printf("Enter Population: "); 
+scanf(" %d", &population); 
+printf("\n---------------------------------\n"); 
+printf("Municipality : %s\n", municipality); 
+printf("Mayor  : %s\n", mayor); 
+printf("Population   : %d\n", population); 
 return 0;
 }
